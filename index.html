@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shahzaib Sheikh | WordPress Web Developer &amp; SEO Specialist</title>
+<meta name="description" content="Shahzaib Sheikh - Professional WordPress Web Developer with 6+ years of experience building WooCommerce stores, business websites and custom WordPress projects. SEO specialist based in Karachi, Pakistan.">
+<meta property="og:title" content="Shahzaib Sheikh | WordPress Web Developer">
+<meta property="og:description" content="6+ years building fast, professional WordPress and WooCommerce websites.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f17;--card:#131a27;--line:#222c3f;--text:#e8ecf4;--muted:#93a0b8;--accent:#4f8cff;--accent2:#22d3a6}
+@media (prefers-color-scheme:light){:root:not([data-theme=dark]){--bg:#f6f8fc;--card:#fff;--line:#e1e7f0;--text:#14181f;--muted:#5b6679;--accent:#2563eb;--accent2:#059669}}
+:root[data-theme=light]{--bg:#f6f8fc;--card:#fff;--line:#e1e7f0;--text:#14181f;--muted:#5b6679;--accent:#2563eb;--accent2:#059669}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.2}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1050px;margin:auto;padding:0 20px}
+section{padding:80px 0}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:8px}
+h2+.sub{color:var(--muted);margin-bottom:36px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem}.logo b{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:.92rem;color:var(--muted)}
+nav ul a:hover{color:var(--text)}
+#menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:6px 11px;border-radius:8px;font-size:1.1rem;cursor:pointer}
+.hero{padding:100px 0 70px}
+.tag{display:inline-block;font-size:.82rem;color:var(--accent2);border:1px solid var(--line);padding:5px 12px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);margin-bottom:14px}
+.hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:620px;color:var(--muted);font-size:1.08rem;margin-bottom:28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 24px;border-radius:10px;font-weight:500;border:1px solid var(--line);transition:.2s}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin-top:50px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{display:block;font-family:'Space Grotesk';font-size:1.9rem;color:var(--accent)}
+.stat span{color:var(--muted);font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.2s}
+.card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.card h3{font-size:1.08rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.93rem}
+.thumb{height:110px;border-radius:10px;margin-bottom:14px;display:grid;place-items:center;font-family:'Space Grotesk';font-size:2rem;font-weight:700;color:#fff}
+.visit{display:inline-block;margin-top:12px;color:var(--accent);font-size:.9rem;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--bg);border:1px solid var(--line);padding:5px 12px;border-radius:99px;font-size:.84rem;color:var(--muted)}
+.card .chips{margin-top:12px}
+.tl{border-left:2px solid var(--line);padding-left:26px;margin-left:6px}
+.job{position:relative;margin-bottom:30px}
+.job::before{content:"";position:absolute;left:-33px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.job h3{font-size:1.1rem}
+.job .meta{color:var(--accent2);font-size:.86rem;margin:2px 0 8px}
+.job ul{padding-left:18px;color:var(--muted);font-size:.93rem}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:36px}
+.about p{color:var(--muted);margin-bottom:14px}
+.contact{text-align:center}
+.contact .grid{max-width:760px;margin:30px auto 0}
+.contact .card{text-align:center}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:.88rem}
+.fade{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.fade.show{opacity:1;transform:none}
+@media(max-width:760px){
+#menu{display:block}
+nav ul{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;background:var(--bg);padding:16px 20px;border-bottom:1px solid var(--line)}
+nav ul.open{display:flex}
+.about{grid-template-columns:1fr}
+section{padding:60px 0}.hero{padding:70px 0 40px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a href="#home" class="logo">Shahzaib<b>.</b>Sheikh</a>
+<button id="menu" aria-label="Menu">☰</button>
+<ul id="links">
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#work">Work</a></li><li><a href="#design">Figma</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<span class="tag">● Available for new projects</span>
+<h1>Hi, I'm <span>Shahzaib Sheikh</span><br>WordPress Web Developer</h1>
+<p>I build fast, dynamic and professional WordPress &amp; WooCommerce websites for businesses worldwide, with SEO built in from day one.</p>
+<div class="btns"><a class="btn p" href="#work">View my work</a><a class="btn" href="#contact">Get in touch</a></div>
+<div class="stats">
+<div class="stat"><b>6+</b><span>Years experience</span></div>
+<div class="stat"><b>9+</b><span>Live projects</span></div>
+<div class="stat"><b>8</b><span>Companies worked with</span></div>
+<div class="stat"><b>UK</b><span>International clients</span></div>
+</div></div></header>
+
+<section id="about"><div class="wrap fade">
+<h2>About me</h2><p class="sub">Developer. Problem solver. Fast learner.</p>
+<div class="about"><div>
+<p>I'm a WordPress Web Developer with 6+ years of hands-on experience building, managing and optimizing websites across eCommerce, business, travel and custom projects. SEO is my secondary skill, so every site I build is fast, clean and ready to rank.</p>
+<p>Beyond development, I handle the technical side too: malware removal, migrations, backups, VPS/SSH/cPanel hosting and speed optimization. I also design UI/UX in Figma and turn those designs into working websites.</p>
+<p>I currently work with a UK-based web agency, delivering custom WordPress sites and WooCommerce stores for international clients.</p>
+</div>
+<div class="card"><h3>Quick facts</h3>
+<p>📍 Karachi, Pakistan<br>🗣 Urdu · English · Sindhi<br>🎓 CIT, Aptech Pakistan<br>🏅 SEO Expert · Frontend Dev · HTML/CSS · Networking certified</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap fade">
+<h2>Skills &amp; expertise</h2><p class="sub">What I do best</p>
+<div class="grid">
+<div class="card"><h3>WordPress Development</h3><div class="chips" style="margin:0"><span class="chip">Custom Websites</span><span class="chip">Elementor</span><span class="chip">WooCommerce</span><span class="chip">SureCart</span><span class="chip">Flatsome</span><span class="chip">Landing Pages</span></div></div>
+<div class="card"><h3>Front-End &amp; Design</h3><div class="chips" style="margin:0"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Responsive Design</span><span class="chip">Figma UI/UX</span></div></div>
+<div class="card"><h3>Server &amp; Security</h3><div class="chips" style="margin:0"><span class="chip">cPanel</span><span class="chip">VPS</span><span class="chip">SSH</span><span class="chip">RDP</span><span class="chip">Malware Removal</span><span class="chip">Migration &amp; Backup</span></div></div>
+<div class="card"><h3>SEO (Secondary)</h3><div class="chips" style="margin:0"><span class="chip">On-Page</span><span class="chip">Technical SEO</span><span class="chip">Keyword Research</span><span class="chip">SEO Audits</span><span class="chip">Search Console</span><span class="chip">Analytics</span></div></div>
+<div class="card"><h3>Optimization</h3><div class="chips" style="margin:0"><span class="chip">Speed Optimization</span><span class="chip">Bug Fixing</span><span class="chip">Performance Tracking</span></div></div>
+<div class="card"><h3>Working Style</h3><div class="chips" style="margin:0"><span class="chip">Client Communication</span><span class="chip">Team Collaboration</span><span class="chip">Time Management</span></div></div>
+</div></div></section>
+
+<section id="work"><div class="wrap fade">
+<h2>WordPress projects</h2><p class="sub">Live websites I've developed and managed</p>
+<div class="grid" id="projects"></div>
+</div></section>
+
+<section id="design"><div class="wrap fade">
+<h2>Figma UI/UX designs</h2><p class="sub">Designs I created and developed myself</p>
+<div class="grid" id="figma"></div>
+</div></section>
+
+<section id="experience"><div class="wrap fade">
+<h2>Experience</h2><p class="sub">6+ years of professional WordPress development</p>
+<div class="tl" id="jobs"></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap fade">
+<h2>Let's work together</h2><p class="sub">Have a project in mind? I'd love to hear about it.</p>
+<div class="grid">
+<a class="card" href="mailto:itengineer3258786@gmail.com"><h3>✉️ Email</h3><p>itengineer3258786@gmail.com</p></a>
+<a class="card" href="tel:+923060218541"><h3>📞 Phone</h3><p>+92 306 0218541</p></a>
+<a class="card" href="https://wa.me/923060218541" target="_blank" rel="noopener"><h3>💬 WhatsApp</h3><p>Message me directly</p></a>
+</div></div></section>
+
+<footer><div class="wrap">© <span id="yr"></span> Shahzaib Sheikh · WordPress Web Developer · Karachi, Pakistan</div></footer>
+
+<script>
+const projects=[
+["Real Men's Wallets","https://www.realmenswallets.com/","Premium wallet eCommerce store with design, optimization and UX improvements.","eCommerce"],
+["The Gym Co","https://thegymco.co/","Fitness and supplement platform with improved structure and performance.","eCommerce"],
+["Amuro Sports","https://www.amurosports.com/","Sports eCommerce site with WordPress customization and optimization.","eCommerce"],
+["Bovari","https://bovari.dk/","Website development, functionality upgrades and layout optimization.","Business"],
+["Daily Shopper","https://dailyshopper.co.za/","Online shopping platform with better responsiveness and user experience.","eCommerce"],
+["Irontec","https://irontec.co/","WordPress customization, technical improvements and maintenance.","Business"],
+["Syed Market","https://syedmarket.com/","eCommerce website optimized for functionality and performance.","eCommerce"],
+["BestMed International","https://bestmedinternational.org/","Healthcare website with SEO and website optimization.","Healthcare"],
+["Made For Her","https://madeforher.pk/","Fashion and beauty store with improved structure and speed.","eCommerce"]
+];
+const figma=[
+/* ADD YOUR FIGMA DESIGNS HERE, copy this line for each one:
+["Design Title","https://www.figma.com/design/YOUR-LINK","Short description","UI/UX"], */
+];
+const jobs=[
+["WordPress Web Developer","Exeist Web Agency","May 2024 – Present",["Custom WordPress sites and WooCommerce stores for international clients (UK agency)","Technical SEO, optimization and maintenance","Malware cleanup, plugin conflicts, speed and hosting fixes","VPS, SSH, cPanel, backups, migrations and security"]],
+["WordPress Web Developer","Digital Systems","Jul 2023 – Apr 2024",["Developed and maintained the company website","SEO improvements, security, hosting and performance"]],
+["WordPress Developer & SEO Specialist","Big Rat Technology","Mar 2023 – Jun 2023",["WordPress development and customization","Technical SEO and bug fixing"]],
+["WordPress Developer","G.M Security Company","Nov 2022 – Mar 2023",["Built and maintained the company website","SEO optimization and performance fixes"]],
+["SEO Specialist & WordPress Developer","Hodophile Adventures","Mar 2022 – Sep 2022",["Managed SEO campaigns and website optimization","Improved rankings and search visibility"]],
+["SEO Specialist & Web Developer","IT Solutions","Jul 2021 – Mar 2022",["SEO, content management and web development","Website updates and technical improvements"]],
+["WordPress Web Developer","FTS International","Jan 2021 – Jun 2021",["Developed and maintained the company website","Online marketing and performance support"]],
+["WordPress Developer","SSDC Technologies Company","Jul 2019 – Apr 2020",["Built WordPress business websites for clients","Setup, maintenance and troubleshooting"]]
+];
+const cols=["#4f8cff,#7c5cff","#22d3a6,#2563eb","#f59e0b,#ef4444","#ec4899,#8b5cf6","#06b6d4,#3b82f6"];
+const $=id=>document.getElementById(id);
+$("projects").innerHTML=projects.map((p,i)=>`<a class="card" href="${p[1]}" target="_blank" rel="noopener"><div class="thumb" style="background:linear-gradient(135deg,${cols[i%5]})">${p[0][0]}</div><h3>${p[0]}</h3><p>${p[2]}</p><div class="chips"><span class="chip">WordPress</span><span class="chip">${p[3]}</span></div><span class="visit">Visit site →</span></a>`).join("");
+$("figma").innerHTML=figma.length?figma.map((p,i)=>`<a class="card" href="${p[1]}" target="_blank" rel="noopener"><div class="thumb" style="background:linear-gradient(135deg,${cols[(i+2)%5]})">${p[0][0]}</div><h3>${p[0]}</h3><p>${p[2]}</p><div class="chips"><span class="chip">Figma</span><span class="chip">${p[3]}</span></div><span class="visit">View design →</span></a>`).join(""):`<div class="card"><h3>Designs coming soon</h3><p>My Figma UI/UX work is being added here.</p></div>`;
+$("jobs").innerHTML=jobs.map(j=>`<div class="job"><h3>${j[0]}</h3><div class="meta">${j[1]} · ${j[2]}</div><ul>${j[3].map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("");
+$("yr").textContent=new Date().getFullYear();
+$("menu").onclick=()=>$("links").classList.toggle("open");
+$("links").onclick=()=>$("links").classList.remove("open");
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("show");io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll(".fade").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
